@@ -30,7 +30,7 @@ public class PageMaker {
 		// 시작 번호
 		startPage = (endPage - displayPageNum)+1;
 		
-		int tempEndPage = (int) (Math.ceil(totalCount)/(double) cri.getPerPageNum());
+		int tempEndPage = (int)(Math.ceil(totalCount)/(double) cri.getPerPageNum());
 		
 		if(endPage > tempEndPage) {
 			endPage = tempEndPage;

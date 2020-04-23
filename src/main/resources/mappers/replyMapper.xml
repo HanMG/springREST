@@ -38,7 +38,7 @@
 		limit #{cri.pageStart}, #{cri.perPageNum}		
 	</select>
 	
-	<select id="count">
+	<select id="count" resultType="int">
 		select count(bno) from tbl_reply
 		where bno = #{bno}
 	</select>
